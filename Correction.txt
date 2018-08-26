@@ -1,0 +1,11 @@
+We are the authors of "Marking Vertices to Find Graph Isomorphism Mapping based on Continuous-time Quantum Walk". We regret to tell that we find something not very clear in our paper, and we would like to explain it below.
+
+In Section 3.1, we take the pentagram as an example. The Table 1 and Table 2 shows probability amplitudes after we perform a quantum walk. The quantum walk we perform ('CWonGraph.m' in the supplementary files) is a variant of CTQW (Continuous-time quantum walk) rather than the strictly original CTQW. It is actually a combination of N CTQWs (N is the number of nodes).
+
+For node i, the walk adds 2 self-loops and then uses the Laplacian matrix as the Hamiltonian matrix to perform the CTQW. The probability amplitude of node i is regarded as the final result of node i. The algorithm will add new self-loops and perform a new walk when it comes to another node.
+
+This kind of quantum walk is a variant of CTQW, and is used in many isomorphism algorithms, including Qiang1, the Intuitive Method and our IsoMarking. Nevertheless, it must be noted that this kind of walk differs from CTQW. However, "Continuous-time quantum walk (CTQW)" or "CTQW" in the captions may indicate that the walk we perform is the original CTQW. Therefore, the two tables do not perfectly match the two captions.
+
+Fortunately, the discussion is not so impacted by the mistake. Even if we perform the original CTQW on both pentagrams, the result is the same. The probability amplitude is always 0.4472+0i, no matter what 't' is.
+
+However, we think it would be better to make some changes. We would like to change the captions of Table 1 and Table 2 into "The results of the left pentagram." and "The results of the left pentagram.", respectively. Then the readers will not be misled. We have been contacted the publisher about the corrections. Sorry again for the misleading writing.
