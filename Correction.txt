@@ -1,6 +1,6 @@
 We are the authors of "Marking Vertices to Find Graph Isomorphism Mapping based on Continuous-time Quantum Walk". We regret to tell that we find something not very clear in our paper, and we would like to explain it below.
 
-In Section 3.1, we take the pentagram as an example. The Table 1 and Table 2 shows probability amplitudes after we perform a quantum walk. The quantum walk we perform ('CWonGraph.m' in the supplementary files) is a variant of CTQW (Continuous-time quantum walk) rather than the strictly original CTQW. It is actually a combination of N CTQWs (N is the number of nodes).
+In Section 3.1, we take the pentagram as an example. The Table 1 and Table 2 shows probability amplitudes after we perform a quantum walk. The quantum walk we perform is a variant of CTQW (Continuous-time quantum walk) rather than the strictly original CTQW. It is actually a combination of N CTQWs (N is the number of nodes).
 
 For node i, the walk adds 2 self-loops and then uses the Laplacian matrix as the Hamiltonian matrix to perform the CTQW. The probability amplitude of node i is regarded as the final result of node i. The algorithm will add new self-loops and perform a new walk when it comes to another node.
 
